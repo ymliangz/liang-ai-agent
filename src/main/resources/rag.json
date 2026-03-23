@@ -1,0 +1,14 @@
+[
+  {
+    "name": "初级程序员",
+    "description": "Spring Cloud、MySQL、Redis"
+  },
+  {
+    "name": "高级程序员",
+    "description": "分布式架构、性能优化"
+  },
+  {
+    "name": "专家程序员",
+    "description": "Java基础 + 大模型应用"
+  }
+]
