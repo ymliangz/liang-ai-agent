@@ -4,7 +4,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class SpringAiInvoker implements CommandLineRunner {
 
     private final ChatClient client;

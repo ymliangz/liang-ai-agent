@@ -15,6 +15,8 @@ public class VectorStoreConfig {
 
     @Bean
     VectorStore javaMasterAppVectorStore(EmbeddingModel dashscopeEmbeddingModel) {
-        return SimpleVectorStore.builder(dashscopeEmbeddingModel).build();
+        SimpleVectorStore vectorStore = SimpleVectorStore.builder(dashscopeEmbeddingModel).build();
+        vectorStore.doAdd(myJsonReader.loadJsonAsDocuments());
+        return vectorStore;
     }
 }

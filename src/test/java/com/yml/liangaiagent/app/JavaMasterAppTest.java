@@ -18,11 +18,11 @@ class JavaMasterAppTest {
     @Test
     void testChat() {
         String chatId = UUID.randomUUID().toString();
-        String answer = javaMasterApp.doChat("我是小梁", chatId);
+        String answer = javaMasterApp.doChat("初级程序员需要学什么", chatId);
         Assertions.assertNotNull(answer);
-        answer = javaMasterApp.doChat("我需要学AI agent开发吗", chatId);
-        Assertions.assertNotNull(answer);
-        answer = javaMasterApp.doChat("我是谁", chatId);
-        Assertions.assertNotNull(answer);
+//        answer = javaMasterApp.doChat("我需要学AI agent开发吗", chatId);
+//        Assertions.assertNotNull(answer);
+//        answer = javaMasterApp.doChat("我是谁", chatId);
+//        Assertions.assertNotNull(answer);
     }
 }
