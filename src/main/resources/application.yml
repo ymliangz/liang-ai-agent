@@ -4,8 +4,6 @@ spring:
   application:
     name: liang-ai-agent
   ai:
-    dashscope:
-      api-key: ${DASHSCOPE_API_KEY}
     chat:
       memory:
         repository:
