@@ -1,9 +1,9 @@
 spring:
+  profiles:
+    active: local
   application:
     name: liang-ai-agent
   ai:
-    deepseek:
-      api-key: sk-d41e193cd8a14d5d93f5944843629bd9
     dashscope:
       api-key: ${DASHSCOPE_API_KEY}
     chat:
@@ -16,30 +16,10 @@ spring:
         speech: none
         transcription: none
       chat: dashscope
-  data:
-    redis:
-      host: localhost
-      port: 6379
-      database: 0
-  datasource:
-    url: jdbc:mysql://localhost:3306/liang-ai?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-    username: root
-    password: 1120321
-    driver-class-name: com.mysql.cj.jdbc.Driver   # MySQL 8 驱动类，可省略（Spring Boot 自动识别）
-  jpa:
-    hibernate:
-      ddl-auto: update          # 可选：create、create-drop、validate、update
-    show-sql: true               # 在日志中显示 SQL 语句
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect   # 指定数据库方言
-        format_sql: true          # 格式化 SQL
 server:
   port: 8123
   servlet:
     context-path: /api
-
-
 
 # springdoc-openapi项目配置
 springdoc:
