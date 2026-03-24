@@ -14,8 +14,8 @@ import java.util.List;
 public class EntertainmentMasterApp {
     private final ChatModel chatModel;
 
-    public EntertainmentMasterApp(ChatModel deepSeekChatModel) {
-        this.chatModel = deepSeekChatModel;
+    public EntertainmentMasterApp(ChatModel dashScopeChatModel) {
+        this.chatModel = dashScopeChatModel;
     }
 
     record ActorsFilms(String actor, List<String> movies) {
