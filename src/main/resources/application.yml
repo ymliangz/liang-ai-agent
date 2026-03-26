@@ -39,3 +39,10 @@ knife4j:
 logging:
   level:
     org.springframework.ai: DEBUG
+    com.yml.liangaiagent.mcp: DEBUG
+
+# Amap MCP Configuration
+amap:
+  mcp:
+    server-url: https://restapi.amap.com/v3
+    api-key: ${AMAP_API_KEY}
